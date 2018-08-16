@@ -9,3 +9,6 @@ Y = dataSet.iloc[:, -1].values
 
 labelX=LabelEncoder()
 X[:,0]=labelX.fit_transform(X[:,0])
+
+labelY=LabelEncoder()
+Y=labelY.fit_transform(Y)
