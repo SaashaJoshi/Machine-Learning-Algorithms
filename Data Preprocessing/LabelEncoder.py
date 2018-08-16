@@ -9,6 +9,8 @@ Y = dataSet.iloc[:, -1].values
 
 labelX=LabelEncoder()
 X[:,0]=labelX.fit_transform(X[:,0])
+hotEncoder= OneHotEncoder(categorical_features=[0])   #OneHotEncoder!
+X=hotEncoder.fit_transform(X).toarray()
 
 labelY=LabelEncoder()
 Y=labelY.fit_transform(Y)
