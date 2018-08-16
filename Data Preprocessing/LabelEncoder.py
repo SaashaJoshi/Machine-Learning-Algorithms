@@ -1,7 +1,7 @@
 # Encoding categorical data
 
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 dataSet = pd.read_csv('Data.csv')
 X = dataSet.iloc[:, :-1].values     #taking all the rows of all the columns except the last one!
