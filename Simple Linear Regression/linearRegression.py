@@ -13,4 +13,4 @@ Xtrain, Xtest, ytrain, ytest= train_test_split(X, y, test_size=1/3, random_state
 
 from sklearn.linear_model import LinearRegression
 regressor=LinearRegression()        #instantiating the LinearRegression model
-regressor.fit(Xtrain, ytrain)       #fits moel on training data
+regressor.fit(Xtrain, ytrain)       #fits model on training data
