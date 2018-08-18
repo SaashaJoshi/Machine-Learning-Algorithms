@@ -23,7 +23,7 @@ ypred=regressor.predict(Xtest)
 
 # Plotting the training set
 plt.scatter(Xtrain, ytrain)     # plotting the variables of the training set
-plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')
+plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')    # regression line!
 plt.title('Salary vs Experience (Training Set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
@@ -31,7 +31,7 @@ plt.show()
 
 # Plotting the test set
 plt.scatter(Xtest, ytest)     # plotting the variables of the test set
-plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')      # Regression line of the already trained machine (using the training set)
+plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')      # Regression line of the already trained machine model (using the training set)
 plt.title('Salary vs Experience (Test Set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
