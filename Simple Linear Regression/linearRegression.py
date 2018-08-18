@@ -1,3 +1,5 @@
+# The machine in this machine learning model is the Simple Linear Regression Model and learning means that we trained SLR machine model on the training set.
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,3 +22,18 @@ regressor.fit(Xtrain, ytrain)       #fits model on training data
 ypred=regressor.predict(Xtest)
 
 # Plotting the training set
+plt.scatter(Xtrain, ytrain)
+plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')
+plt.title('Salary vs Experience (Training Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+# Plotting the test set
+plt.scatter(Xtest, ytest)
+plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')
+plt.title('Salary vs Experience (Test Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+  
