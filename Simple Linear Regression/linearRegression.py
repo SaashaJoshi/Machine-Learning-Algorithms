@@ -15,14 +15,14 @@ Xtrain, Xtest, ytrain, ytest= train_test_split(X, y, test_size=1/3, random_state
 
 # Fitting Simple Linear Regression to training set
 from sklearn.linear_model import LinearRegression
-regressor=LinearRegression()        #instantiating the LinearRegression model
-regressor.fit(Xtrain, ytrain)       #fits model on training data
+regressor=LinearRegression()        # instantiating the LinearRegression model
+regressor.fit(Xtrain, ytrain)       # fits model on training data
 
 # Predicting test results
 ypred=regressor.predict(Xtest)
 
 # Plotting the training set
-plt.scatter(Xtrain, ytrain)
+plt.scatter(Xtrain, ytrain)     # plotting the variables of the training set
 plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')
 plt.title('Salary vs Experience (Training Set)')
 plt.xlabel('Years of Experience')
@@ -30,8 +30,8 @@ plt.ylabel('Salary')
 plt.show()
 
 # Plotting the test set
-plt.scatter(Xtest, ytest)
-plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')
+plt.scatter(Xtest, ytest)     # plotting the variables of the test set
+plt.plot(Xtrain, regressor.predict(Xtrain), color='Black')      # Regression line of the already trained machine (using the training set)
 plt.title('Salary vs Experience (Test Set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
