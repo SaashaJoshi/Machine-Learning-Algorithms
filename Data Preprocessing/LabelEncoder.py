@@ -1,4 +1,5 @@
 # Encoding categorical data
+# Creating Dummy Variables!
 
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
